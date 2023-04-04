@@ -1,4 +1,4 @@
-﻿using UnityEditor;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEditor.AddressableAssets.Settings;
@@ -29,7 +29,8 @@ namespace ThunderRoad
         public static bool runGameAfterBuild;
         public static string runGameArguments;
         public static bool cleanDestination = true;
-
+        private Vector2 scrollPos;
+        
         [MenuItem("ThunderRoad (SDK)/Asset Bundle Builder")]
         public static void ShowWindow()
         {
@@ -69,7 +70,7 @@ namespace ThunderRoad
             GUILayout.Label(new GUIContent("AssetBundle builder (" + EditorUserBuildSettings.activeBuildTarget + ")"), new GUIStyle("BoldLabel"));
             GUILayout.Space(5);
 
-            //scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
+            scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
             int selectedCount = 0;
             foreach (AssetBundleGroup assetBundleGroup in assetBundleGroups)
             {
@@ -90,8 +91,25 @@ namespace ThunderRoad
                 }
                 EditorGUILayout.EndHorizontal();
             }
-            //EditorGUILayout.EndScrollView();
+            EditorGUILayout.EndScrollView();
 
+            if (GUILayout.Button("Create New Asset Group"))
+            {
+                if (File.Exists("Assets/SDK/AssetBundleGroups/NewMod.asset"))
+                {
+                    Debug.LogWarning("You already have a new asset group");
+                }
+                else
+                {
+                    AssetBundleGroup newGroup = CreateInstance<AssetBundleGroup>();
+                    newGroup.folderName = "NewMod";
+                    newGroup.addressableAssetGroups = new List<AddressableAssetGroup>();
+
+                    AssetDatabase.CreateAsset(newGroup, "Assets/SDK/AssetBundleGroups/NewMod.asset");
+                    assetBundleGroups.Add(newGroup);
+                }
+            }
+            
             GUILayout.Space(5);
             EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
 
