@@ -15,7 +15,6 @@ MonoBehaviour:
   folderName: Trials of the Shinobi
   isDefault: 0
   addressableAssetGroups:
-  - {fileID: 11400000, guid: 6c00cdf8a2c6afb419ce6148fbb245c0, type: 2}
   - {fileID: 11400000, guid: 3338ba1ef51e7f54db7d1b41552af4ea, type: 2}
   selected: 1
   exportAfterBuild: 1
