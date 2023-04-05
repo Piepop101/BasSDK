@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 468a46d0ae32c3544b7d98094e6448a9, type: 3}
   m_Name: AddressableAssetSettings
   m_EditorClassIdentifier: 
-  m_DefaultGroup: 6046a774c72c12b419e73c96a6bb40e8
+  m_DefaultGroup: 5894750547a24b04ab56c1597e13d556
   m_CachedHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -30,7 +30,7 @@ MonoBehaviour:
   m_StripUnityVersionFromBundleBuild: 1
   m_DisableVisibleSubAssetRepresentations: 0
   m_ShaderBundleNaming: 2
-  m_ShaderBundleCustomNaming: Trials of the Shinobi
+  m_ShaderBundleCustomNaming: Darksaber
   m_MonoScriptBundleNaming: 0
   m_MonoScriptBundleCustomNaming: 
   m_RemoteCatalogBuildPath:
@@ -39,7 +39,7 @@ MonoBehaviour:
     m_Id: f0d6e0cdd8192a84f819089abb779b64
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 2
-  m_overridePlayerVersion: Trials of the Shinobi
+  m_overridePlayerVersion: Darksaber
   m_GroupAssets:
   - {fileID: 11400000, guid: cfc7bd780798872419ab40cac555580b, type: 2}
   - {fileID: 11400000, guid: dada93e4e3a09ef4ba4a1759a0d8f911, type: 2}
@@ -51,6 +51,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 592f3e3b679c5a148a3460ab3a0f6de1, type: 2}
   - {fileID: 11400000, guid: e184159bacc83e94083fbd198276d2fa, type: 2}
   - {fileID: 11400000, guid: f0911727e09ecd04e93b423443d0fda5, type: 2}
+  - {fileID: 11400000, guid: 23f2209533da008459a2e1c4eb6425b8, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -65,7 +66,7 @@ MonoBehaviour:
       - m_Id: ce15733c007f6d84a9cd434894e23ab1
         m_Value: '[ThunderRoad.AssetBundleBuilder.assetsLocalPath]'
       - m_Id: f0d6e0cdd8192a84f819089abb779b64
-        m_Value: '{ThunderRoad.FileManager.aaModPath}/Trials of the Shinobi'
+        m_Value: '{ThunderRoad.FileManager.aaModPath}/Darksaber'
       - m_Id: d8fad135d0762f943a80ca7860c8e9fc
         m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]'
       - m_Id: 3868748ffde3b334bbd8b7acf4ed429e
